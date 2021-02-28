@@ -1,0 +1,28 @@
+.wavy{
+    margin-top: 70px;
+    text-align: center;
+    position: relative;
+    /*police en reflet dégradé*/
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.4));
+}
+.wavy span{
+    position: relative;
+    display: inline-block;
+    color: linear-gradient(#313131,#A47CE1);
+    font-size: 2em;
+    text-transform: uppercase;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate {
+    /*animation fait bouger le text de haut en bas à intervalde 1s*/
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%, 100%{
+        transform: translateY(0px);
+    }
+}

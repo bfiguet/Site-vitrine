@@ -1,0 +1,56 @@
+.text{
+    position: relative;
+    padding: 150px;
+    background: brown;
+    background-attachment: fixed;
+       /* permet que le reste de la page defile sur le bg */ 
+    color: white;
+}
+.contact{
+    top: 50%;
+    right: 15%;
+    position: absolute;
+    width: 400px;
+    height: auto;
+    padding: 40px 10px;
+    background: #fff;
+    border: 2px solid rgb(236, 184, 40);
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.contact a{
+    width: 100%;
+    margin: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.5);
+    outline: none; 
+}
+.contact textarea{
+    height: 150px;
+    width: 100%;
+    resize: none;
+}
+.contact input[type="submit"]{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #2f1c41;
+    border-color: rgb(236, 184, 40);
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-style: 18px;
+}
+.contact input[type="submit"]:hover{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid rgb(236, 184, 40);
+    color: black;
+}
+.contact placeholder{
+    color: #666;
+}
